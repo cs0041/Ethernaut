@@ -86,6 +86,7 @@ But you must pass conditions first. `require(msg.value > 0 && contributions[msg.
 ### (2) `you reduce its balance to 0`
 Very Ez Now that you own it, you can do whatever you want
 
+#### Open Developer Tools (F12)
 - (1)  type `withdraw()` and confirm transaction
   
   
