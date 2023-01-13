@@ -5,27 +5,44 @@
 #### Open Developer Tools (F12)
 
 - (1) type `await contract.info()` 
+
+
 --------> you will see a message `'You will find what you need in info1().'`
 - (2) type  `await contract.info1()`
+
+
 --------> you will see a message `'Try info2(), but with "hello" as a parameter.'` 
 - (3) type  `await contract.info2("hello")`
+
+
 --------> you will see a message `'The property infoNum holds the number of the next info method to call.'` 
 - (4) type  
 ```
 let message = await contract.infoNum()
 message.toString()
 ```
+
+
 --------> you will see a message `'42'` 
 - (5) type  `await contract.info42()`
+
+
+
 --------> you will see a message `'theMethodName is the name of the next method.'` 
 - (6) type  `await contract.theMethodName()`
+
+
 --------> you will see a message `'The method name is method7123949.'` 
 - (7) type  `await contract.method7123949()`
+
+
 --------> you will see a message `'If you know the password, submit it to authenticate().'` 
 
 Now we need to find the password. We will use the contract.abi command to see what functions are available. 
 
 - (8) type  `await contract.abi`
+
+
 --------> you will see a message 
 ```
 (11) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
@@ -67,6 +84,8 @@ Now we need to find the password. We will use the contract.abi command to see wh
 Obj array 9 is a password function and is view , so we'll try calling
 
 - (9) type  `await contract.password()`
+
+
 --------> you will see a message `'ethernaut0'` 
 
 Finally got the password
